@@ -53,10 +53,10 @@ Observer selection is displayed separately from Doppler state so that physical i
 
 This version of the project was my second attempt to represent Doppler shift in galaxies as an educational simulation. The initial version had limitations in representing the underlying physics and mathematical calculations.
 
-While building and testing this project, I faced some technical challenges that helped me to improve my skills and approach to problem solving. 
+1. While building and testing this project, I faced some technical challenges that helped me to improve my skills and approach to problem solving. 
 During the testing of Simulation 1, the slider displayed a value of 0.00, while the simulation could still show a small redshift. The problem was caused by the internal floating-point value being slightly different from zero even though the displayed value was rounded. To address this problem, I first limited the slider input using Clamp node and then used Snap to Grid with a step of 0.01, so that the value used in the calculations matched the value shown to the user. 
 
-Additionally, particles in the Niagara’s system were not always responding correctly to color changes during runtime. The initial color logic mainly affected particle initialization. To solve this, I updated the Niagara logic so that Blueprint-controlled color parameter also updates active particles during runtime.
+2. Additionally, particles in the Niagara’s system were not always responding correctly to color changes during runtime. The initial color logic mainly affected particle initialization. To solve this, I updated the Niagara logic so that Blueprint-controlled color parameter also updates active particles during runtime.
 
 ---
 
