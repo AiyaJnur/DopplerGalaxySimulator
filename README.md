@@ -20,6 +20,19 @@ The second simulation provides an opportunity for the user to choose an observer
 
 ---
 
+## Screenshots
+
+### Screenshot 1
+![Simulation 1](Docs/Screenshots/1_Simulation1.png)
+### Screenshot 2
+![Simulation 2](Docs/Screenshots/2_Simulation2.png)
+### Screenshot 3
+![Relative Radial Velocity Blueprint](Docs/Screenshots/3_RelativeRadialVelocity.png)
+### Screenshot 4
+![Galaxy DataTable](Docs/Screenshots/4_GalaxyDataTable.png)
+
+---
+
 ## Key Features
 
 - Two connected Doppler-shift simulations
@@ -41,11 +54,14 @@ The simulation uses:
 - blue for blueshift;
 - gray for approximately neutral radial motion;
 - red for redshift;
-- a gold ring to identify the currently selected observer.
 
 These colors are educational visual indicators and should not be interpreted as the literal visible colors of real galaxies.
 
-Observer selection is displayed separately from Doppler state so that physical information and interface state remain visually distinct.
+---
+
+## Architecture
+
+The project separates user interface, simulation logic, mathematical calculations, and galaxy visualization. The main Doppler calculations are stored in a reusable Blueprint Function Library, while separate controller Blueprints manage Simulation 1 and Simulation 2. Galaxy parameters in Simulation 2 are stored in a DataTable, allowing galaxies to be spawned and initialized from structured data instead of individual hardcoded logic.
 
 ---
 
